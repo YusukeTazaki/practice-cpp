@@ -1,0 +1,31 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe アクティブなファイルのビルド",
+            "command": "D:/dev/mingw64/bin/g++.exe",
+            "args": [
+                "--coverage",
+                "-I", "D:/dev/CppUTest/include",
+                "-I", "D:/projects/practice-cpp/include",
+                "-g", "${file}", "D:/projects/practice-cpp/tests/MyTests.cpp", "D:/projects/practice-cpp/src/my_code.cpp",
+                "-L", "D:/dev/CppUTest/lib",
+                "-lCppUTest",
+                "-fdiagnostics-color=always",
+                "-o", "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "デバッガーによって生成されたタスク。"
+        }
+    ],
+    "version": "2.0.0"
+}

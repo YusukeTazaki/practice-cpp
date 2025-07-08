@@ -1,0 +1,10 @@
+{
+  "cmake.generator": "MinGW Makefiles",
+  "cmake.configureSettings": {
+    "CMAKE_C_COMPILER": "gcc",
+    "CMAKE_CXX_COMPILER": "g++"
+  },
+  "files.associations": {
+    "iostream": "cpp"
+  }
+}
